@@ -56,7 +56,7 @@
 			    
 			    google.maps.event.addListener(marker, 'click', (function(marker, i) {
 			        return function() {
-			          infowindow.setContent('<h4>'+locations[i][0]+'</h4><a href="http://maps.google.com/maps?daddr='+location[1]+','+location[2]+'" target="_blank" style="color: black!important;">Get Directions</a>');
+			          infowindow.setContent('<h4>'+locations[i][0]+'</h4><a href="https://maps.google.com/maps?daddr='+location[1]+','+location[2]+'" target="_blank" style="color: black!important;">Get Directions</a>');
 			          infowindow.open(mapL, marker);
 			        }
 			      })(marker, i));

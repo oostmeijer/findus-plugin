@@ -50,7 +50,7 @@ class Findus extends ComponentBase
     public function onRun(){
 
         $this->addCss('/plugins/radiantweb/findus/assets/css/findus.css');
-        $this->addJs('/modules/backend/assets/js/vendor/jquery-2.0.3.min.js');
+        $this->addJs('/modules/backend/assets/js/vendor/jquery.min.js');
 
         $this->addCss('/plugins/radiantweb/findus/assets/fancybox/jquery.fancybox.css');
         $this->addJs('/plugins/radiantweb/findus/assets/fancybox/jquery.fancybox.pack.js');
@@ -98,7 +98,7 @@ class Findus extends ComponentBase
 
     private function getGeoCode($address){
         //build url
-        $base_url = "http://maps.google.com/maps/api/geocode/json?sensor=false";
+        $base_url = "https://maps.google.com/maps/api/geocode/json?sensor=false";
         $request_url = $base_url . "&address=".urlencode($address);
 
         // Get cURL resource
