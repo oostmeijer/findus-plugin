@@ -2,3 +2,4 @@
     - Initialize plugin
 1.0.1:
     - changed all links to google to use https protocol. This solves problems when implementing this plugin on secure websites.
+    - fixed bad link to jquery
